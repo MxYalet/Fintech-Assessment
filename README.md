@@ -34,3 +34,6 @@ This project demonstrates the key functionalities relevant to fintech services, 
 2. Open in Android Studio
 3. Sync the project with Gradle files
 4. Run the application on an emulator or a physical device
+
+## Demo
+https://drive.google.com/file/d/1QV5gmMGpsb2exK_v_ydRnb3X8HpcP5KY/view?usp=sharing
