@@ -95,7 +95,7 @@ class TransferFragment : Fragment() {
         transferViewModel.transferMoney(sender, receiver, bank, amount)
 
         val dialog = ActionDialogFragment.newInstance(
-            "Owoyale",
+            "User",
             amount.toString(),
             transferFrom,
             accountNumber,

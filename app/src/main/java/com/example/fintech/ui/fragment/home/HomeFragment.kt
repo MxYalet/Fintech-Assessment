@@ -4,12 +4,15 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.activityViewModels
 import androidx.fragment.app.viewModels
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.fintech.R
 import com.example.fintech.adapter.TransactionAdapter
 import com.example.fintech.databinding.FragmentHomeBinding
+import com.example.fintech.ui.fragment.auth.viewModel.AuthViewModel
 import com.example.fintech.ui.fragment.transfer.TransactionHistoryFragment
 import com.example.fintech.ui.fragment.transfer.viewModel.TransferViewModel
 
@@ -34,6 +37,10 @@ class HomeFragment : Fragment() {
             binding.balanceTextView.text = "₦${String.format("%,.2f", balance)}"
         }
 
+//        authViewModel.userName.observe(viewLifecycleOwner) { userName ->
+//           binding.firstName.text = userName
+//        }
+
         binding.transactionLayout.setOnClickListener {
             val transactionHistoryFragment = TransactionHistoryFragment()
             requireActivity().supportFragmentManager.beginTransaction()
@@ -46,7 +53,6 @@ class HomeFragment : Fragment() {
         binding.transactionRecyclerView.adapter = transactionAdapter
         binding.transactionRecyclerView.layoutManager = LinearLayoutManager(context)
 
-        // Observe transactions and update dynamically
         transferViewModel.allTransactions.observe(viewLifecycleOwner) { transactions ->
             transactionAdapter.updateTransactions(transactions)
         }

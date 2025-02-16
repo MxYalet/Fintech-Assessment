@@ -76,13 +76,7 @@ class ActionDialogFragment : BottomSheetDialogFragment() {
         const val TAG = "ActionDialogFragment"
 
         // Companion object method to create instance with parameters
-        fun newInstance(
-            name: String,
-            transactionAmount: String,
-            transferFrom: String,
-            accountNumber: String,
-            bank: String
-        ): ActionDialogFragment {
+        fun newInstance(name: String, transactionAmount: String, transferFrom: String, accountNumber: String, bank: String): ActionDialogFragment {
             val fragment = ActionDialogFragment()
             val args = Bundle()
             args.putString("name", name)

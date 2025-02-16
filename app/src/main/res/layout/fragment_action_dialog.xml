@@ -32,7 +32,7 @@
                 android:layout_marginStart="4dp"
                 android:textColor="@color/wellness_black"
                 android:textSize="17sp"
-                tools:text="Owoyale" />
+                tools:text="Customer" />
 
         </LinearLayout>
 
@@ -55,7 +55,7 @@
                 android:textColor="@color/black"
                 android:textSize="20sp"
                 android:textStyle="bold"
-                tools:text="@string/are_you_sure" />
+                android:text="@string/are_you_sure" />
 
         </LinearLayout>
 

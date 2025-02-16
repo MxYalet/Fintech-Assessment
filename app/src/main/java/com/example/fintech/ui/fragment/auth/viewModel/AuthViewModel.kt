@@ -17,6 +17,10 @@ class AuthViewModel(private val authRepository: AuthRepository) : ViewModel() {
     private val _userName = MutableLiveData<String>()
     val userName: LiveData<String> get() = _userName
 
+    fun setUserName(name: String) {
+        _userName.value = name   // Now, we can update the value
+    }
+
     fun signIn(email: String, password: String) {
         authRepository.signIn(email, password, {
             _authResult.value = true

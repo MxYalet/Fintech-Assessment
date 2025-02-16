@@ -64,12 +64,23 @@ class SignUpFragment : Fragment() {
         authViewModel.authResult.observe(viewLifecycleOwner) { isSuccess ->
             progressDialog.dismiss()
             if (isSuccess) {
+                // Ensure the name is stored in ViewModel
+                val firstName = binding.firstNameText.text.toString()
+                authViewModel.setUserName(firstName)
                 Toast.makeText(context, "Sign-up successful", Toast.LENGTH_SHORT).show()
-                val intent = Intent(activity, HomeActivity::class.java)
-                intent.putExtra("USER_NAME", authViewModel.userName.value)
-                startActivity(intent)
+
+                val signInFragment = SignInFragment()
+                val bundle = Bundle()
+                bundle.putString("USER_NAME", authViewModel.userName.value)
+                signInFragment.arguments = bundle
+
+                parentFragmentManager.beginTransaction()
+                    .replace(R.id.fragment_container, signInFragment)
+                    .addToBackStack(null)
+                    .commit()
             }
         }
+
 
         authViewModel.authError.observe(viewLifecycleOwner) { errorMessage ->
             progressDialog.dismiss()
