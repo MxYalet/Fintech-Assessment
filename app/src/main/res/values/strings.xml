@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">Fintech</string>
+
+    <string name="onboarding_text">Seamless and transparent customer experience at every step of transfer</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="enter_your_details_to_get_started">Enter your details to get started\n</string>
+    <string name="name">Name</string>
+    <string name="email_address">Email Adress</string>
+    <string name="password">Password</string>
+    <string name="sign_in">Sign In\n</string>
+    <string name="securely_login_to_your_account">Securely login to your account</string>
+    <string name="log_in">Log in</string>
+    <string name="welcome2">Welcome,</string>
+    <string name="how_are_you_feeling_today">How are you feeling today?</string>
+    <string name="home">Home\n</string>
+    <string name="profile">Profile</string>
+    <string name="explore">Payment\n</string>
+    <string name="splash_image_description">image icon\n</string>
+    <string name="transactions">Recent Transactions</string>
+    <string name="save_for_emergency">Save for an emergency</string>
+    <string name="transfer">Transfer</string>
+    <string name="self_service">Recent transactions</string>
+    <string name="confirm">Confirm</string>
+    <string name="bank">Bank\n</string>
+    <string name="account_number">Account number</string>
+    <string name="make_transfer">Make transfer</string>
+    <string name="are_you_sure">Are you sure?</string>
+    <string name="yes_proceed">YES, PROCEED</string>
+    <string name="no_cancel">NO, CANCEL\n</string>
+    <string name="bravo">Bravo</string>
+    <string name="back_to_home_page">Back to home page</string>
+    <string name="proceed">Proceed</string>
+    <string name="pin_text">Transaction PIN</string>
+    <string name="invest_your_money">Invest your money</string>
+    <string name="see_history">See all transactions</string>
+    <string name="Amount">Amount</string>
+    <string name="balance_format">N%.2f</string>
+    <string name="you_have_successfully_transferred">You have successfully transferred:</string>
+
+</resources>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/nav_home"
+        android:title="Home"
+        android:icon="@drawable/nav_home"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/nav_transfer"
+        android:title="Transfer"
+        android:icon="@drawable/transfer_tab"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/nav_account"
+        android:title="Account"
+        android:icon="@drawable/account_icon"
+        app:showAsAction="ifRoom"/>
+</menu>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "705387394520",
+    "project_id": "fintech-register-firebase",
+    "storage_bucket": "fintech-register-firebase.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:705387394520:android:46fb309a5e1ed0f1feaead",
+        "android_client_info": {
+          "package_name": "com.example.fintech"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDIqM2hnqDrkKOZep6YADy22wXCbs10X8A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
